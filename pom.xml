@@ -171,6 +171,7 @@
                 <configuration>
                     <mainClass>${app.launcher}</mainClass>
                     <options>
+                        <option>-XstartOnFirstThread</option>
                         <option>--add-exports=javafx.graphics/com.sun.javafx.scene.layout=ALL-UNNAMED</option>
                         <option>-Dorg.lwjgl.util.Debug=true</option>
                         <option>--add-opens=javafx.base/com.sun.javafx=ALL-UNNAMED</option>

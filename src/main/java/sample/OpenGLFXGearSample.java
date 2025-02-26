@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL11;
 
 
@@ -21,6 +22,12 @@ public class OpenGLFXGearSample extends Application {
 	private Gears renderable;
 	
 	private Label fpsLabel;
+
+	@Override
+	public void init() throws Exception {
+		glfwInit();
+
+	}
 
 	@Override
 	public void start(Stage stage) throws Exception {
