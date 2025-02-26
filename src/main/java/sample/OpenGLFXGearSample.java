@@ -1,8 +1,7 @@
 package sample;
 
+import com.huskerdev.grapl.gl.GLProfile;
 import com.huskerdev.openglfx.canvas.GLCanvas;
-import com.huskerdev.openglfx.canvas.GLCanvasAnimator;
-import com.huskerdev.openglfx.canvas.GLProfile;
 import com.huskerdev.openglfx.lwjgl.LWJGLExecutor;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -53,7 +52,7 @@ public class OpenGLFXGearSample extends Application {
 	}
 
 	private GLCanvas createGLPane() {
-		GLCanvas glCanvas = new GLCanvas(LWJGLExecutor.LWJGL_MODULE, GLProfile.Core);
+		GLCanvas glCanvas = new GLCanvas(LWJGLExecutor.LWJGL_MODULE, GLProfile.CORE);
 
 		glCanvas.addOnInitEvent((event)->{
 			renderable = new Gears();
@@ -109,7 +108,7 @@ public class OpenGLFXGearSample extends Application {
 
 
 
-		glCanvas.setAnimator(new GLCanvasAnimator(60));
+		glCanvas.setFps(60);
 //
 		return glCanvas;
 	}

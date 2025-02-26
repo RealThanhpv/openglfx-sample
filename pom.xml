@@ -16,9 +16,9 @@
         <gluonfx.target>host</gluonfx.target>
         <javafx.plugin.version>0.0.8</javafx.plugin.version>
         <app.launcher>sample.Launcher</app.launcher>
-        <lwjgl.natives>natives-windows</lwjgl.natives>
+        <lwjgl.natives>natives-mac</lwjgl.natives>
         <lwjgl.version>3.3.4</lwjgl.version>
-        <openglfx.version>4.0.5</openglfx.version>
+        <openglfx.version>4.1.20</openglfx.version>
         <joml.version>1.9.25</joml.version>
         <tinylog.version>2.7.0</tinylog.version>
         <javafx.version>23.0.1</javafx.version>
